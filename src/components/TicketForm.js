@@ -12,7 +12,24 @@ export default function TicketForm() {
         3: 'high'
     };
 
+    const handleInputChange = (event) => {
+        setDescription(event.target.value);
+    };
+
     return (
-        <div></div>
+      <div>
+        <h2>Enter Description:</h2>
+        <textarea
+          value={description}
+          onChange={handleInputChange}
+          placeholder="Type your description here..."
+          rows="4"
+          cols="50"
+        />
+        <div style={{ marginTop: "20px" }}>
+          <h3>Your Description:</h3>
+          <p>{description}</p>
+        </div>
+      </div>
     );
 }
