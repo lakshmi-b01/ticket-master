@@ -27,7 +27,7 @@ export default function TicketForm() {
           cols="50"
         />
         <div style={{ marginTop: "20px" }}>
-          <h3>Your Description:</h3>
+          <h3>Your Description is:</h3>
           <p>{description}</p>
         </div>
       </div>
