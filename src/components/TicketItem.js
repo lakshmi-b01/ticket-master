@@ -16,6 +16,14 @@ export default function TicketItem({ticket, dispatch}){
 
             <h3>{title}</h3>
             <p>{description}</p>
+
+            <button className="button" onClick={() => dispatch({type: "DELETE_TICKET", payload: {id}})}>
+                Delete
+            </button>
+
+            <button className="button" onClick={() => {/* Edit ticket*/}}>
+                Edit
+            </button>
         </div>
     );
 

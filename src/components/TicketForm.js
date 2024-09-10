@@ -21,7 +21,7 @@ export default function TicketForm({dispatch}) {
     event.preventDefault();
 
     const ticketData = {
-      id: new Date().toISOString, 
+      id: new Date().toISOString(), 
       title, 
       description,
       priority,
